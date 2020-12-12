@@ -1,0 +1,16 @@
+<!-- 
+<script>
+	let src = 'tutorial/image.gif';
+	let name = 'Rick Astley';
+</script>
+
+<img {src} alt="{name} dances."> 
+-->
+
+<script type="module">
+	import {$} from './tools.js'
+	$('.gambar').setAttribute('src', 'https://svelte.dev/tutorial/image.gif')
+	$('.gambar').setAttribute('alt', 'Rick Astley dances')
+</script>
+
+<img class="gambar">
